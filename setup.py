@@ -15,6 +15,9 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: Linux",
     ],
-    scripts=["pytools/pyprof.py"],
-    install_requires=['graphviz', 'pyprof2calltree'],
+    scripts=[
+        "pytools/pytprof.py",
+        "pytools/pymprof.py",
+        ],
+    install_requires=['line-profiler'], #, 'graphviz', 'pyprof2calltree'],
     python_requires='>=3.7')
