@@ -3,7 +3,7 @@ import os
 
 setuptools.setup(
     name="pytools", # Replace with your own username
-    version="0.0",
+    version="0.1",
     author="Maximilien Lehujeur",
     author_email="maximilien.lehujeur@gmail.com",
     description="",
