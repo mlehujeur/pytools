@@ -5,10 +5,14 @@ import numpy as np
 def fun(x):
     return x * x
 
+@profile
 def main():
-    x = np.random.randn(1024)
-    for i in range(10):
+    x = np.ones((256, 256))
+    z = []
+    for i in range(2):
+        # z.append(fun(x))
         fun(x)
+    del z
     
 if __name__ == "__main__":
     main()
