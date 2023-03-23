@@ -13,8 +13,8 @@ python -m pip install -e .
 ```bash 
 # add @profile decorators in your program
 # call pymprof.py or pytprof.py instead of python
-pymprof.py my_python_script.py
-pytprof.py my_python_script.py
+pymprof.py ./pytools/tester.py
+pytprof.py ./pytools/tester.py
 ```
 
 
