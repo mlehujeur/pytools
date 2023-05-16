@@ -9,7 +9,6 @@
 *.npz
 *.npy
 *.mp4
-*.html
 *.sqlite
 *.hdf5
 *.fifo
