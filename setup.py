@@ -19,5 +19,5 @@ setuptools.setup(
         "pytools/pytprof.py",
         "pytools/pymprof.py",
         ],
-    install_requires=['line-profiler'], #, 'graphviz', 'pyprof2calltree'],
+    install_requires=['memory-profiler', 'line-profiler'], #, 'graphviz', 'pyprof2calltree'],
     python_requires='>=3.7')
