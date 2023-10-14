@@ -9,7 +9,6 @@
 *.npz
 *.npy
 *.mp4
-*.html
 *.sqlite
 *.hdf5
 *.fifo
@@ -60,7 +59,7 @@ coverage.xml
 .hypothesis/
 
 # Sphinx documentation
-docs/_build/
+# docs/_build/
 
 # PyBuilder
 target/

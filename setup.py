@@ -1,5 +1,22 @@
 import setuptools
 import os
+import subprocess
+
+
+class MakeTheDoc(setuptools.Command):
+    description = "Generate Documentation Pages using Sphinx"
+    user_options = []
+
+    def initialize_options(self):
+        pass
+
+    def finalize_options(self):
+        pass
+
+    def run(self):
+        subprocess.run(
+            ['sphinx-build docsrc docs'], shell=True)
+        
 
 setuptools.setup(
     name="pytools", # Replace with your own username
@@ -19,5 +36,11 @@ setuptools.setup(
         "pytools/pytprof.py",
         "pytools/pymprof.py",
         ],
-    install_requires=['memory-profiler', 'line-profiler'],
+    cmdclass={
+        'doc': MakeTheDoc,
+        },
+    install_requires=[
+        'memory-profiler', 'line-profiler',
+        'sphinx', 'sphinx-rtd-theme', 'myst-parser',  
+        ],
     python_requires='>=3.7')
