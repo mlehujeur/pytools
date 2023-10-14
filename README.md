@@ -1,3 +1,5 @@
+[![Generic badge](https://img.shields.io/badge/docs-passing-<green>.svg)](https://mlehujeur.github.io/pytools/)	
+
 # PYTOOLS
 
 A wrapper for line profiler and memory profiler.
