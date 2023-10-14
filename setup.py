@@ -15,7 +15,7 @@ class MakeTheDoc(setuptools.Command):
 
     def run(self):
         subprocess.run(
-            ['sphinx-build docs/ docs/_build'], shell=True)
+            ['sphinx-build docs/sources docs/build'], shell=True)
         
 
 setuptools.setup(
